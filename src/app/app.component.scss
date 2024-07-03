@@ -1,0 +1,12 @@
+:host {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+app-food {
+    grid-column: 1;
+}
+
+app-menu {
+    grid-column: 2;
+}
