@@ -1,0 +1,24 @@
+.foodCard {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 2;
+    border: 1px solid gray;
+    margin: 1rem 1rem;
+}
+
+img {
+    grid-column: 1;
+    width: 10rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.foodText {
+    grid-column: 2;
+    text-align: center;
+}
+
+.numberOfFood {
+    width: 1.3rem;
+    margin-right: 0.5rem;
+}

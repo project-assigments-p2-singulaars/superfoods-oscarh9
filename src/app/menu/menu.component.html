@@ -1,0 +1,12 @@
+<div class="father">
+<h2>Menu - Calories: {{totalCalories()}}</h2>
+@for (food of menu(); track $index) {
+    <ul class="card">
+        <img src="{{food.image}}" alt="{{food.name}}">
+        <div class="foodText">
+        <p>{{food.name}}</p>
+        <p>{{food.calories}}</p>
+    </div>
+    </ul>
+}
+</div>

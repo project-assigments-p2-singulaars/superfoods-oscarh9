@@ -1,0 +1,18 @@
+<div class="father">
+<div class="newFoodFather">
+    <app-search></app-search>
+    <button (click)="showForm()" *ngIf="!isVisible">Add new food</button>
+    <form *ngIf="isVisible" [formGroup]="foodForm" (ngSubmit)="submit()">
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name">
+        <label for="calories">Calories:</label>
+        <input type="number" formControlName="calories">
+        <label for="image">Image:</label>
+        <input type="text" formControlName="image">
+        <label for="quantity">Quantity:</label>
+        <input type="number" formControlName="quantity">
+
+        <button type="submit">Add food</button>
+    </form>
+</div>
+</div>
